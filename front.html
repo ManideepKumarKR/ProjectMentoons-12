@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        /* toggel bar */
+        
+        .container {
+            position: relative;
+            width: 650px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+
+        .bar {
+            background-color: #f1f1f1;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .content {
+            display: none;
+            padding: 10px;
+        }
+
+        /* Header */
+        header {
+            background-color:deepskyblue;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            flex: 1;
+            font-size: 24px;
+            font-weight: bold;
+            margin-left: 20px;
+        }
+
+        .header-images {
+            display: flex;
+            justify-content: center;
+        }
+
+        .header-images img {
+            max-width: 100%;
+            height: auto;
+            margin: 5px;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color:rgb(255, 255, 30);
+            padding: 10px;
+            display: flex;
+            align-items: center;
+           
+        }
+
+        .nav-image {
+            max-width: 200px;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .nav-elements {
+            flex: 1;
+            text-align: center;
+        }
+
+        .nav-elements a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        /* Image filling webpage height */
+        .full-image {
+            width: 500px;
+            height: 40px;
+            object-fit: cover;
+            align-self: center;
+            margin-top: 35px;
+            padding-left: 500px;
+        }
+
+        /* Two images on left-half */
+        .left-half {
+            display: flex;
+            width: 50%;
+            height: 100%;
+            margin-left: 40px;
+        }
+
+        .left-half img {
+            width: 100%;
+            height: 50%;
+            object-fit: cover;
+            padding-top: 30px;
+        }
+        
+        .left-half1 {
+            display: flex;
+            width: 50%;
+            height: 100%;
+            margin-left: 40px;
+            padding-top: 40px;
+        }
+
+        .left-half1 img {
+            width: 600px;
+            height: 20%;
+            object-fit: cover;
+        }
+        
+
+        /* Three expandable text boxes */
+        .expandable-boxes {
+            display: flex;
+            width: 50%;
+            height: 100%;
+            flex-direction: column;
+              margin-left:750px;
+              padding-top: 30px;
+        }
+
+        .expandable-box {
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin-bottom: 5px;
+            cursor: pointer;
+        }
+
+        /* Full-width image with multiple images inside */
+        .full-width-image {
+            width: 1510px;
+            height: auto;
+        }
+
+        .full-width-image img {
+            width: 100%;
+            height: 800px;
+            margin: 5px;
+        }
+
+        /* Center-aligned button */
+        .center-button {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .center-button button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        #head-img{
+		  height: 100px;	
+		  padding-right: 40px;
+		}
+		
+		 aside{border: 5px solid rgb(35, 35, 35);
+            text-align: center;
+            font-size: 35px;
+            margin-top: -900px;
+            margin-left:850px;
+            padding-top: 5px;
+            width: 609px;
+            height: 304px;
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            background-color: rgb(35, 35, 35);
+            border-radius: 25px;
+        }
+		
+		.div1{
+			border: #333 solid 5px;
+			background-color: #333;
+			height: 200px;
+			width: 200px;
+		}
+		
+		
+    </style>
+</head>
+<body>
+    <!-- Header with logo and 8 images -->
+    <header>
+        <div class="logo"><img src="logo_prev.png"
+        style="height: 70px; width: 160px;"
+        ></div>
+        <div class="header-images">
+            <img id="head-img" src="Inside MENTOONS-01.png" alt="Image 1">
+            <img id="head-img" src="Inside MENTOONS-02.png" alt="Image 2">
+            <img id="head-img" src="Inside MENTOONS-03.png" alt="Image 3">
+            <img id="head-img" src="Inside MENTOONS-04.png" alt="Image 4">
+            <img id="head-img" src="Inside MENTOONS-05.png" alt="Image 5">
+            <img id="head-img" src="Inside MENTOONS-06.png" alt="Image 6">
+            <img id="head-img" src="Inside MENTOONS-07.png" alt="Image 7">
+            <img id="head-img" src="Inside MENTOONS-08.png" alt="Image 8">
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <img src="Inside MENTOONS-10.png" alt="Nav Image" class="nav-image">
+        <div class="nav-elements">
+            <a style="color: #333;" href="#">Anchors</a>
+            <a style="color: #333;" href="#">Models</a>
+            <a style="color: #333;" href="#">Musicians</a>
+            <a style="color: #333;" href="#">Theater Artists</a>
+        </div>
+    </nav>
+
+    <!-- Image filling webpage height -->
+    <img src="Inside MENTOONS-09.png" alt="Filling Image" class="full-image">
+
+    <!-- Two images on left-half and expandable boxes on right-half -->
+    <div class="left-half">
+        <img src="Inside MENTOONS-11.png" alt="Left Image 1">
+    </div>
+    <div class="left-half1">
+        <img src="Inside MENTOONS-24.png" alt="Left Image 2"
+        height="100"
+        >
+    </div>
+    
+    <aside><img src="youtube.png" alt="Left Image 1" height="100px"
+    style="border: black sloid 1px;">
+    
+    </aside>
+    
+    
+    <div class="expandable-boxes">
+		<p style="text-align: center;">Watch on YouTube</p>
+        
+    <!--   Toggel bar  -->
+    
+    <div class="container">
+        <div class="bar" id="openCloseBar1" onclick="toggleBar('content1')">
+            <button>+  Hiring Anchors </button>
+        </div>
+        <div class="content" id="content1">
+            <!-- Your content goes here -->
+            <p>Lorem ipsum is simply dummy text of the printing and typescript Industry.
+				Lorem has been the industry's standard dummy text.
+			</p>
+			 <div class="center-button">
+       <a href="#"><button type="button" class="btn btn-outline-light" style="background-color: rgb(247, 0, 247); color: rgb(0, 0, 0);
+        border-radius: 20px;                                                           
+        border: 5px solid rgb(0, 128, 255)">SUBMIT RESUME</button></a>
+    </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="bar" id="openCloseBar2" onclick="toggleBar('content2')">
+            <button>+ Hiring Musicians</button>
+        </div>
+        <div class="content" id="content2">
+            <!-- Your content goes here -->
+            <p>Lorem ipsum is simply dummy text of the printing and typescript Industry.
+				Lorem has been the industry's standard dummy text.</p>
+				<div class="center-button">
+       <a href="#"><button type="button" class="btn btn-outline-light" style="background-color: rgb(247, 0, 247); color: rgb(0, 0, 0);
+        border-radius: 20px;                                                           
+        border: 5px solid rgb(0, 128, 255)">SUBMIT RESUME</button></a>
+    </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="bar" id="openCloseBar3" onclick="toggleBar('content3')">
+            <button>+  Hiring Psychology Graduates</button>
+        </div>
+        <div class="content" id="content3">
+            <!-- Your content goes here -->
+            <p>Lorem ipsum is simply dummy text of the printing and typescript Industry.
+				Lorem has been the industry's standard dummy text.</p>
+				<div class="center-button">
+       <a href="#"><button type="button" class="btn btn-outline-light" style="background-color: rgb(247, 0, 247); color: rgb(0, 0, 0);
+        border-radius: 20px;                                                           
+        border: 5px solid rgb(0, 128, 255)">SUBMIT RESUME</button></a>
+    </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleBar(contentId) {
+            var content = document.getElementById(contentId);
+
+            if (content.style.display === "none") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+    </div>
+    
+
+    <!-- Full-width image with multiple images inside -->
+    <div class="full-width-image">
+        <img src="Inside MENTOONS-21.png" alt="Full Image 1" height="100px"
+        style="margin-top: 310px;">
+    </div>
+    
+    <div style="margin-top: -780px;margin-left: 400px;"><img src="Inside MENTOONS-18.png" alt="Full Image 2" style="height: 100px;width: 750px;"></div>
+
+   <div style="margin-top: 30px;margin-left: 150px;" class="div1"> <img src="Inside MENTOONS-12.png" alt="Full Image 2" height="250px" width="250px" ></div>
+   
+   <div style="margin-top: -205px; margin-left: 650px;
+   " class="div1" >
+   <img src="Inside MENTOONS-13.png" alt="Full Image 2" width="250px" height="250px" ></div>
+   
+    <div style="margin-top: -210px;margin-left: 1100px;" class="div1"> <img src="Inside MENTOONS-12.png" alt="Full Image 2" height="250px" width="250px" ></div>
+   
+   <div style="margin-left: 100px; margin-top: 85px;"><img src="play.png" height="240px" width="550px" style="border-radius: 20px;" ></div>
+   
+    <div style="margin-left: 900px; margin-top: -240px;"><img src="play.png" height="240px" width="550px" style="border-radius: 20px;" ></div>
+   
+    <!-- Center-aligned button -->
+    <div class="center-button">
+       <a href="#"><button type="button" class="btn btn-outline-light" style="background-color: rgb(247, 0, 247); color: white;
+        border-radius: 20px;                                                           
+        border: 5px solid rgb(255, 255, 255)">VIEW MORE</button></a>
+    </div>
+</body>
+</html>
